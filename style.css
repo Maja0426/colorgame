@@ -1,0 +1,157 @@
+/*=== CSS RESET ===*/
+
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+button {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*=== BASE SETTINGS ===*/
+
+body {
+	height: 100vh;
+	width: 100%;
+	font-family: 'Baloo Bhai',
+	cursive;
+}
+
+/*=== MENU SETTINGS ===*/
+
+#mainTitle {
+	height: 25vh;
+	background: #17a2b8;
+	text-shadow: 3px 3px 3px #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.menu {
+	margin: auto;
+}
+
+.selected {
+	background: #17a2b8 !important;
+	color: #f8f9fa !important;
+}
+
+#tryAgain {
+	display: inline-block;
+	width: 200px;
+	padding: 0 1rem;
+}
+
+button {
+	border: none;
+	background: #f8f9fa;
+	font-weight: bold;
+	color: #17a2b8;
+	text-transform: uppercase;
+	height: 100%;
+	transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+}
+
+button:hover {
+	background: #17a2b8;
+	color: #f8f9fa !important;
+}
+
+button:focus {
+	border: none;
+	outline: none;
+}
+
+/*=== CARDS SETTINGS ===*/
+
+.line {
+	width: 60%;
+	margin: auto;
+}
+
+.colorBox {
+	float: left;
+	background: #17a2b8;
+	border-radius: 15px;
+	width: 30%;
+	padding-bottom: 30%;
+	margin: 1.66%;
+	transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+}
+
+@media (max-width: 1024px) {
+
+	#mainTitle {
+		height: 21vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	h1 {
+		font-size: 2rem !important;
+		margin: .2rem !important;
+	}
+	h3 {
+		font-size: 1.5rem !important;
+		padding: 0 !important;
+		margin: .2rem !important;
+	}
+	
+	#tryAgain {
+		display: none;
+	}
+
+	.line {
+		width: 75%;
+		margin: auto;
+	}
+
+	.menu {
+		margin: auto;
+	}
+	
+	.colorBox {
+		width: 45%;
+		padding-bottom: 45%;
+		margin: 1.66%;
+		transition: all .3s ease-out;
+		-webkit-transition: all .3s ease-out;
+		-moz-transition: all .3s ease-out;
+	}
+}
+
